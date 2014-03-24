@@ -22,7 +22,7 @@ Helps to create PHQL queries using an OO interface
 Methods
 -------
 
-public  **__construct** ([*array* $params])
+public  **__construct** ([*array* $params], [:doc:`Phalcon\\DI <Phalcon_DI>` $dependencyInjector])
 
 Phalcon\\Mvc\\Model\\Query\\Builder constructor 
 
@@ -33,35 +33,15 @@ Phalcon\\Mvc\\Model\\Query\\Builder constructor
      $params = array(
         'models'     => array('Users'),
         'columns'    => array('id', 'name', 'status'),
-        'conditions' => array(
-            array(
-                "created > :min: AND created < :max:",
-                array("min" => '2013-01-01',   'max' => '2014-01-01'),
-                array("min" => PDO::PARAM_STR, 'max' => PDO::PARAM_STR),
-            ),
-        ),
-        // or 'conditions' => "created > '2013-01-01' AND created < '2014-01-01'",
+        'conditions' => "created > '2013-01-01' AND created < '2014-01-01'",
         'group'      => array('id', 'name'),
         'having'     => "name = 'Kamil'",
         'order'      => array('name', 'id'),
         'limit'      => 20,
         'offset'     => 20,
-        // or 'limit' => array(20, 20),
     );
     $queryBuilder = new Phalcon\Mvc\Model\Query\Builder($params);
 
-
-
-
-public :doc:`Phalcon\\Mvc\\Model\\Query\\BuilderInterface <Phalcon_Mvc_Model_Query_BuilderInterface>`  **distinct** (*unknown* $distinct)
-
-Sets SELECT DISTINCT / SELECT ALL flag
-
-
-
-public *bool*  **getDistinct** ()
-
-Returns SELECT DISTINCT / SELECT ALL flag
 
 
 
@@ -129,7 +109,7 @@ Return the models who makes part of the query
 
 
 
-public :doc:`Phalcon\\Mvc\\Model\\Query\\Builder <Phalcon_Mvc_Model_Query_Builder>`  **join** (*string* $model, [*string* $conditions], [*string* $alias])
+public :doc:`Phalcon\\Mvc\\Model\\Query\\Builder <Phalcon_Mvc_Model_Query_Builder>`  **join** (*string* $model, [*string* $conditions], [*string* $alias], [*string* $type])
 
 Adds a INNER join to the query 
 

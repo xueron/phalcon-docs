@@ -7,6 +7,12 @@ Phalcon\\Mvc\\CollectionInterface initializer
 Methods
 -------
 
+abstract public  **__construct** ([:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector])
+
+Phalcon\\Mvc\\Collection
+
+
+
 abstract public  **setId** (*mixed* $id)
 
 Sets a value for the _id propery, creates a MongoId object if needed

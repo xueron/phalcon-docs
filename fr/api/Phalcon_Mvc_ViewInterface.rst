@@ -49,18 +49,6 @@ Sets base path. Depending of your platform, always add a trailing slash or backs
 
 
 
-abstract public *string*  **getCurrentRenderLevel** ()
-
-Gets the current render level
-
-
-
-abstract public *string*  **getRenderLevel** ()
-
-Gets the render level for the view
-
-
-
 abstract public  **setRenderLevel** (*string* $level)
 
 Sets the render level for the view
@@ -232,12 +220,6 @@ Enables the auto-rendering process
 abstract public  **reset** ()
 
 Resets the view component to its factory default values
-
-
-
-abstract public *bool*  **isDisabled** ()
-
-Whether the automatic rendering is disabled
 
 
 

@@ -37,9 +37,21 @@ Isset property
 
 
 
-abstract public  **remove** (*string* $property)
+abstract public  **__set** (*string* $property, *string* $value)
 
-Unset property
+Setter of values
+
+
+
+abstract public *mixed*  **__get** (*string* $property)
+
+Getter of values
+
+
+
+abstract public *boolean*  **__isset** (*string* $property)
+
+Isset property
 
 
 

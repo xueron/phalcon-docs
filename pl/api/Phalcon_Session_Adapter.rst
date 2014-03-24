@@ -1,8 +1,6 @@
 Abstract class **Phalcon\\Session\\Adapter**
 ============================================
 
-*implements* :doc:`Phalcon\\Session\\AdapterInterface <Phalcon_Session_AdapterInterface>`, Countable, IteratorAggregate, Traversable, ArrayAccess
-
 Base class for Phalcon\\Session adapters
 
 
@@ -118,7 +116,7 @@ Check whether the session has been started
 
 
 
-public *boolean*  **destroy** ([*unknown* $session_id])
+public *boolean*  **destroy** ()
 
 Destroys the active session 
 
@@ -129,55 +127,5 @@ Destroys the active session
     var_dump($session->destroy());
 
 
-
-
-public  **__get** (*unknown* $property)
-
-...
-
-
-public  **__set** (*unknown* $property, *unknown* $value)
-
-...
-
-
-public  **__isset** (*unknown* $property)
-
-...
-
-
-public  **__unset** (*unknown* $property)
-
-...
-
-
-public  **offsetGet** (*unknown* $property)
-
-...
-
-
-public  **offsetSet** (*unknown* $property, *unknown* $value)
-
-...
-
-
-public  **offsetExists** (*unknown* $property)
-
-...
-
-
-public  **offsetUnset** (*unknown* $property)
-
-...
-
-
-public  **count** ()
-
-...
-
-
-public  **getIterator** ()
-
-...
 
 

@@ -27,25 +27,9 @@ public  **setShowBacktrace** ([*unknown* $show])
 ...
 
 
-public  **enableLabels** ([*unknown* $enable])
-
-...
-
-
-public  **labelsEnabled** ()
-
-...
-
-
-public *string*  **format** (*string* $message, *int* $type, *int* $timestamp, *unknown* $context)
+public *string*  **format** (*string* $message, *int* $type, *int* $timestamp)
 
 Applies a format to a message before sending it to the log
-
-
-
-protected  **interpolate** (*string* $message, *array* $context) inherited from Phalcon\\Logger\\Formatter
-
-Interpolates context values into the message placeholders
 
 
 

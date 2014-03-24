@@ -31,54 +31,49 @@ Returns a formatter
 
 
 
-public  **log** (*int* $type, *string* $message, [*unknown* $context])
+public  **log** (*string* $message, [*int* $type])
 
 Sends a message to each registered logger
 
 
 
-public  **emergency** (*string* $message, [*unknown* $context])
+public  **emergence** (*string* $message)
 
-Sends/Writes an emergency message to the log
-
-
-
-public  **emergence** (*unknown* $message, [*unknown* $context])
-
-...
+Sends/Writes an emergence message to the log
 
 
-public  **debug** (*string* $message, [*unknown* $context])
+
+public  **debug** (*string* $message)
 
 Sends/Writes a debug message to the log
 
 
 
-public  **error** (*string* $message, [*unknown* $context])
+public  **error** (*string* $message)
 
 Sends/Writes an error message to the log
 
 
 
-public  **info** (*string* $message, [*unknown* $context])
+public  **info** (*string* $message)
 
 Sends/Writes an info message to the log
 
 
 
-public  **notice** (*string* $message, [*unknown* $context])
+public  **notice** (*string* $message)
 
 Sends/Writes a notice message to the log
 
 
 
-public  **warning** (*string* $message, [*unknown* $context])
+public  **warning** (*string* $message)
 
 Sends/Writes a warning message to the log
 
 
 
-public  **alert** (*string* $message, [*unknown* $context])
+public  **alert** (*string* $message)
 
 Sends/Writes an alert message to the log
 

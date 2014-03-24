@@ -38,7 +38,7 @@ Constants
 Methods
 -------
 
-public  **__construct** (*string* $phql)
+public  **__construct** ([*string* $phql], [:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector])
 
 Phalcon\\Mvc\\Model\\Query constructor
 
@@ -144,11 +144,6 @@ protected *string*  **_getGroupClause** ()
 
 Returns a processed group clause for a SELECT statement
 
-
-
-protected  **_getLimitClause** ()
-
-...
 
 
 protected *array*  **_prepareSelect** ()

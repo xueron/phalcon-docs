@@ -54,12 +54,6 @@ Register templating engines
 
 
 
-public  **getRegisteredEngines** ()
-
-Returns the registered templating engines
-
-
-
 protected *array*  **_loadTemplateEngines** ()
 
 Loads registered template engines, if none is registered it will use Phalcon\\Mvc\\View\\Engine\\Php

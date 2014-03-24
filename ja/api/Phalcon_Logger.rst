@@ -37,5 +37,3 @@ Constants
 
 *integer* **EMERGENCE**
 
-*integer* **EMERGENCY**
-

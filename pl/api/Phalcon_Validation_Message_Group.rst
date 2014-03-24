@@ -67,7 +67,7 @@ Removes a message from the list
 
 
 
-public  **appendMessage** (:doc:`Phalcon\\Validation\\Message <Phalcon_Validation_Message>` $message)
+public  **appendMessage** (*Phalcon\\Validation\\MessageInterface* $message)
 
 Appends a message to the group 
 

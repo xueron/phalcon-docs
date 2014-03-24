@@ -20,7 +20,7 @@ Constants
 Methods
 -------
 
-final public  **__construct** ([:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector])
+final public  **__construct** ([:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector], [:doc:`Phalcon\\Mvc\\Collection\\ManagerInterface <Phalcon_Mvc_Collection_ManagerInterface>` $modelsManager])
 
 Phalcon\\Mvc\\Model constructor
 
@@ -50,7 +50,7 @@ Returns the dependency injection container
 
 
 
-protected  **setEventsManager** (:doc:`Phalcon\\Events\\ManagerInterface <Phalcon_Events_ManagerInterface>` $eventsManager)
+protected  **setEventsManager** ()
 
 Sets a custom events manager
 
@@ -299,7 +299,7 @@ Appends a customized message on the validation process
 
 public *boolean*  **save** ()
 
-Creates/Updates a collection based on the values in the attributes
+Creates/Updates a collection based on the values in the atributes
 
 
 
@@ -439,23 +439,9 @@ Serializes the object ignoring connections or protected properties
 
 
 
-public  **unserialize** ([*unknown* $serialized])
+public  **unserialize** (*string* $data)
 
 Unserializes the object from a serialized string
-
-
-
-public static *array*  **execute** (*mixed* $code, [*array* $args])
-
-Runs JavaScript code on the database server. 
-
-.. code-block:: php
-
-    <?php
-
-     $ret = Robots::execute("function() { return 'Hello, world!';}");
-     echo $ret['retval'], "\n";
-
 
 
 

@@ -7,6 +7,12 @@ Phalcon\\Mvc\\Model\\Transaction\\ManagerInterface initializer
 Methods
 -------
 
+abstract public  **__construct** ([:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector])
+
+Phalcon\\Mvc\\Model\\Transaction\\Manager
+
+
+
 abstract public *boolean*  **has** ()
 
 Checks whether manager has an active transaction

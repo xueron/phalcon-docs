@@ -64,11 +64,11 @@ Utility to normalize a string's encoding to UTF-32.
 
 public *string*  **escapeHtml** (*string* $text)
 
-Escapes a HTML string. Internally uses htmlspecialchars
+Escapes a HTML string. Internally uses htmlspeciarchars
 
 
 
-public *string*  **escapeHtmlAttr** (*unknown* $text)
+public *string*  **escapeHtmlAttr** (*string* $attribute)
 
 Escapes a HTML attribute string
 

@@ -53,12 +53,6 @@ Prints the messages in the session flasher
 
 
 
-public  **has** (*unknown* $type)
-
-bool \\Phalcon\\Flash\\Session::has(string $type)
-
-
-
 public  **__construct** ([*array* $cssClasses]) inherited from Phalcon\\Flash
 
 Phalcon\\Flash constructor

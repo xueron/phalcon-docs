@@ -35,7 +35,7 @@ Phalcon\\Config constructor
 
 
 
-public *boolean*  **offsetExists** (*unknown* $property)
+public *boolean*  **offsetExists** (*string* $index)
 
 Allows to check whether an attribute is defined using the array-syntax 
 
@@ -61,7 +61,7 @@ Gets an attribute from the configuration, if the attribute isn't defined returns
 
 
 
-public *string*  **offsetGet** (*unknown* $property)
+public *string*  **offsetGet** (*string* $index)
 
 Gets an attribute using the array-syntax 
 
@@ -74,7 +74,7 @@ Gets an attribute using the array-syntax
 
 
 
-public  **offsetSet** (*unknown* $property, *mixed* $value)
+public  **offsetSet** (*string* $index, *mixed* $value)
 
 Sets an attribute using the array-syntax 
 
@@ -87,7 +87,7 @@ Sets an attribute using the array-syntax
 
 
 
-public  **offsetUnset** (*unknown* $property)
+public  **offsetUnset** (*string* $index)
 
 Unsets an attribute using the array-syntax 
 
@@ -137,28 +137,23 @@ public  **__wakeup** ()
 ...
 
 
-public static :doc:`Phalcon\\Config <Phalcon_Config>`  **__set_state** ([*unknown* $properties])
+public static :doc:`Phalcon\\Config <Phalcon_Config>`  **__set_state** (*array* $data)
 
 Restores the state of a Phalcon\\Config object
 
 
 
-public  **__get** (*unknown* $property)
+public  **__get** (*unknown* $index)
 
 ...
 
 
-public  **__set** (*unknown* $property, *unknown* $value)
+public  **__set** (*unknown* $index, *unknown* $value)
 
 ...
 
 
-public  **__isset** (*unknown* $property)
-
-...
-
-
-public  **__unset** (*unknown* $property)
+public  **__isset** (*unknown* $index)
 
 ...
 

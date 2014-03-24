@@ -11,31 +11,49 @@ Methods
 
 abstract public :doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>`  **set** (*string* $name, *mixed* $definition, [*boolean* $shared])
 
-Registers a service in the service container
+Registers a service in the services container
+
+
+
+abstract public :doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>`  **setShared** (*string* $name, *mixed* $definition)
+
+Registers an "always shared" service in the services container
 
 
 
 abstract public  **remove** (*string* $name)
 
-Removes a service from the service container
+Removes a service in the services container
 
 
 
-abstract public *object*  **get** (*string* $name, [*array* $parameters])
+abstract public :doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>`  **attempt** (*string* $name, *mixed* $definition, [*boolean* $shared])
+
+Attempts to register a service in the services container Only is successful if a service hasn't been registered previously with the same name
+
+
+
+abstract public *mixed*  **get** (*string* $name, [*array* $parameters])
 
 Resolves the service based on its configuration
 
 
 
-abstract public *object*  **getShared** (*string* $name, [*array* $parameters])
+abstract public *mixed*  **getShared** (*string* $name, [*array* $parameters])
 
-Resolves a shared service based on their configuration
+Returns a shared service based on their configuration
 
 
 
-abstract public :doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>`  **setService** (:doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>` $rawDefinition)
+abstract public :doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>`  **setRaw** (*string* $name, :doc:`Phalcon\\DI\\ServiceInterface <Phalcon_DI_ServiceInterface>` $rawDefinition)
 
 Sets a service using a raw Phalcon\\DI\\Service definition
+
+
+
+abstract public *mixed*  **getRaw** (*string* $name)
+
+Returns a service definition without resolving
 
 
 
@@ -65,7 +83,7 @@ Return the services registered in the DI
 
 abstract public static  **setDefault** (:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector)
 
-Set the default dependency injection container to be obtained into static methods
+Set a default dependency injection container to be obtained into static methods
 
 
 

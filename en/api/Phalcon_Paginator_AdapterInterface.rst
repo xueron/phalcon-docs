@@ -7,6 +7,12 @@ Phalcon\\Paginator\\AdapterInterface initializer
 Methods
 -------
 
+abstract public  **__construct** (*array* $config)
+
+Phalcon\\Paginator\\AdapterInterface constructor
+
+
+
 abstract public  **setCurrentPage** (*int* $page)
 
 Set the current page number

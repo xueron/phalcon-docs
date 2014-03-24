@@ -37,9 +37,9 @@ Reset set headers
 
 
 
-abstract public *array*  **toArray** ()
+abstract public static :doc:`Phalcon\\Http\\Response\\HeadersInterface <Phalcon_Http_Response_HeadersInterface>`  **__set_state** (*array* $data)
 
-Returns the current headers as an array
+Restore a Phalcon\\Http\\Response\\Headers object
 
 
 

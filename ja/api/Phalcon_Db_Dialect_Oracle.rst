@@ -5,7 +5,7 @@ Class **Phalcon\\Db\\Dialect\\Oracle**
 
 *implements* :doc:`Phalcon\\Db\\DialectInterface <Phalcon_Db_DialectInterface>`
 
-Generates database specific SQL for the Oracle RBDMS
+Generates database specific SQL for the Oracle RBDM
 
 
 Methods
@@ -83,7 +83,7 @@ Generates SQL to create a table in PostgreSQL
 
 
 
-public *boolean*  **dropTable** (*string* $tableName, *string* $schemaName)
+public *boolean*  **dropTable** (*string* $tableName, *string* $schemaName, [*boolean* $ifExists])
 
 Generates SQL to drop a table
 

@@ -109,27 +109,9 @@ Generates SQL to drop a table
 
 
 
-abstract public *string*  **createView** (*string* $viewName, *array* $definition, *string* $schemaName)
-
-Generates SQL to create a view
-
-
-
-abstract public *string*  **dropView** (*string* $viewName, *string* $schemaName, [*unknown* $ifExists])
-
-Generates SQL to drop a view
-
-
-
 abstract public *string*  **tableExists** (*string* $tableName, [*string* $schemaName])
 
 Generates SQL checking for the existence of a schema.table
-
-
-
-abstract public *string*  **viewExists** (*string* $viewName, [*string* $schemaName])
-
-Generates SQL checking for the existence of a schema.view
 
 
 
@@ -142,12 +124,6 @@ Generates SQL to describe a table
 abstract public *array*  **listTables** ([*string* $schemaName])
 
 List all tables on database
-
-
-
-abstract public *array*  **listViews** ([*string* $schemaName])
-
-List all views on database
 
 
 

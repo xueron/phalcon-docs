@@ -67,7 +67,7 @@ Commits the transaction
 
 public *boolean*  **rollback** ([*string* $rollbackMessage], [:doc:`Phalcon\\Mvc\\ModelInterface <Phalcon_Mvc_ModelInterface>` $rollbackRecord])
 
-Rolls back the transaction
+Rollbacks the transaction
 
 
 

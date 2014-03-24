@@ -114,13 +114,13 @@ Decrypts an encrypted text
 
 
 
-public *string*  **encryptBase64** (*string* $text, [*string* $key], [*unknown* $safe])
+public *string*  **encryptBase64** (*string* $text, [*string* $key])
 
 Encrypts a text returning the result as a base64 string
 
 
 
-public *string*  **decryptBase64** (*string* $text, [*string* $key], [*unknown* $safe])
+public *string*  **decryptBase64** (*string* $text, [*string* $key])
 
 Decrypt a text that is coded as a base64 string
 

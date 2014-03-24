@@ -31,35 +31,6 @@ Sets the bind types in the criteria This method replaces all previously set boun
 
 
 
-abstract public :doc:`Phalcon\\Mvc\\Model\\CriteriaInterface <Phalcon_Mvc_Model_CriteriaInterface>`  **columns** (*string|array* $columns)
-
-Sets the columns to be queried 
-
-.. code-block:: php
-
-    <?php
-
-    $criteria->columns(array('id', 'name'));
-
-
-
-
-abstract public :doc:`Phalcon\\Mvc\\Model\\CriteriaInterface <Phalcon_Mvc_Model_CriteriaInterface>`  **join** (*string* $model, [*string* $conditions], [*string* $alias], [*string* $type])
-
-Adds a join to the query 
-
-.. code-block:: php
-
-    <?php
-
-    $criteria->join('Robots');
-    $criteria->join('Robots', 'r.id = RobotsParts.robots_id');
-    $criteria->join('Robots', 'r.id = RobotsParts.robots_id', 'r');
-    $criteria->join('Robots', 'r.id = RobotsParts.robots_id', 'r', 'LEFT');
-
-
-
-
 abstract public :doc:`Phalcon\\Mvc\\Model\\CriteriaInterface <Phalcon_Mvc_Model_CriteriaInterface>`  **where** (*string* $conditions)
 
 Adds the conditions parameter to the criteria
@@ -116,7 +87,7 @@ Appends a BETWEEN condition to the current conditions
 
     <?php
 
-    $criteria->betweenWhere('price', 100.25, 200.50);
+    $builder->betweenWhere('price', 100.25, 200.50);
 
 
 
@@ -129,7 +100,7 @@ Appends a NOT BETWEEN condition to the current conditions
 
     <?php
 
-    $criteria->notBetweenWhere('price', 100.25, 200.50);
+    $builder->notBetweenWhere('price', 100.25, 200.50);
 
 
 
@@ -142,7 +113,7 @@ Appends an IN condition to the current conditions
 
     <?php
 
-    $criteria->inWhere('id', [1, 2, 3]);
+    $builder->inWhere('id', [1, 2, 3]);
 
 
 
@@ -155,7 +126,7 @@ Appends a NOT IN condition to the current conditions
 
     <?php
 
-    $criteria->notInWhere('id', [1, 2, 3]);
+    $builder->notInWhere('id', [1, 2, 3]);
 
 
 

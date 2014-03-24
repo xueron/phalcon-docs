@@ -20,8 +20,7 @@ Encapsulates validation info generated before save/delete records fails
             $text = "A robot cannot be named Peter";
             $field = "name";
             $type = "InvalidValue";
-            $code = 103;
-            $message = new Message($text, $field, $type, $code);
+            $message = new Message($text, $field, $type);
             $this->appendMessage($message);
          }
        }
@@ -33,7 +32,7 @@ Encapsulates validation info generated before save/delete records fails
 Methods
 -------
 
-public  **__construct** (*string* $message, [*string* $field], [*string* $type])
+public  **__construct** (*string* $message, [*string* $field], [*string* $type], [:doc:`Phalcon\\Mvc\\ModelInterface <Phalcon_Mvc_ModelInterface>` $model])
 
 Phalcon\\Mvc\\Model\\Message constructor
 
@@ -48,18 +47,6 @@ Sets message type
 public *string*  **getType** ()
 
 Returns message type
-
-
-
-public :doc:`Phalcon\\Mvc\\Model\\Message <Phalcon_Mvc_Model_Message>`  **setCode** (*string* $code)
-
-Sets message code
-
-
-
-public *string*  **getCode** ()
-
-Returns message code
 
 
 
@@ -105,7 +92,7 @@ Magic __toString method returns verbose message
 
 
 
-public static :doc:`Phalcon\\Mvc\\Model\\Message <Phalcon_Mvc_Model_Message>`  **__set_state** ([*unknown* $properties])
+public static :doc:`Phalcon\\Mvc\\Model\\Message <Phalcon_Mvc_Model_Message>`  **__set_state** (*array* $message)
 
 Magic __set_state helps to re-build messages variable exporting
 

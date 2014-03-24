@@ -85,9 +85,3 @@ Checks if cache exists and it hasn't expired
 
 
 
-abstract public *boolean*  **flush** ()
-
-Immediately invalidates all existing items.
-
-
-

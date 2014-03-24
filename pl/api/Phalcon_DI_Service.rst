@@ -63,7 +63,7 @@ Returns the service definition
 
 
 
-public *object*  **resolve** ([*array* $parameters], [:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector])
+public *mixed*  **resolve** ([*array* $parameters], [:doc:`Phalcon\\DiInterface <Phalcon_DiInterface>` $dependencyInjector])
 
 Resolves the service
 
@@ -81,13 +81,7 @@ Returns a parameter in a specific position
 
 
 
-public *bool*  **isResolved** ()
-
-Returns true if the service was resolved
-
-
-
-public static :doc:`Phalcon\\DI\\Service <Phalcon_DI_Service>`  **__set_state** ([*unknown* $properties])
+public static :doc:`Phalcon\\DI\\Service <Phalcon_DI_Service>`  **__set_state** (*array* $attributes)
 
 Restore the internal state of a service
 
